@@ -20,6 +20,9 @@
                                 <group>
                                     <field name ="teacher_id">Teacher</field>
                                 </group>
+                                <group>
+                                    <field name ="grade_id">Grade</field>
+                                </group>
                             </h2>
                         </group>
                     </group>
@@ -44,7 +47,8 @@
       <field name="arch" type="xml">
             <tree>
                 <field name="class_name" >Class name </field>
-                <field name ="teacher_id">Teacher ID </field>                
+                <field name ="teacher_id">Teacher ID </field>
+                <field name ="grade_id">Grade</field>                
                 <field name="student_number" >Number of student </field>   
                 <field name="class_describe" >Describe </field>                                             
             </tree>

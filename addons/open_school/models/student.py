@@ -8,7 +8,7 @@ class Student(models.Model):
 
     name = fields.Char('Student name',required = True)
     student_code = fields.Char('Student code',required = True)
-    grade = fields.Float('Student grade')
+    score = fields.Float('Student score')
     age = fields.Integer('Student age')
     class_id = fields.Many2one('school.class',string="Class")
     #diem -float
