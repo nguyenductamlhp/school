@@ -10,6 +10,4 @@ class School_class(models.Model):
     class_describe = fields.Text('Describe')
     student_ids = fields.One2many('school.student','class_id',)
     teacher_id = fields.Many2one('school.teacher',string="Homeroom teacher")
-    _sql_constraints = [
-        ('name_uniq', 'unique (class_name)', "Class name already exists !"),
-    ]
+    grade_id = fields.Many2one('school.grade',string="Grade")
