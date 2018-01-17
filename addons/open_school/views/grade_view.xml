@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="view_grade_form" model="ir.ui.view">
+      <field name="name">view.grade.form</field>
+      <field name="model">school.grade</field>
+      <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <h1>
+                        <field name="grade_code" placeholder="Grade code" />
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="year_start" >Start </field>  
+                        </group>
+                        <group>
+                            <field name="year_end" >End </field>  
+                        </group>   
+                    </group> 
+                    <group>
+                        <field name="class_ids">Class </field>
+                    </group>   
+                </sheet>
+            </form>
+      </field>
+    </record>
+     <record id="view_grade_tree" model="ir.ui.view">
+      <field name="name">view.grade.tree</field>
+      <field name="model">school.grade</field>
+      <field name="arch" type="xml">
+            <tree>
+                <field name="grade_code" > Grade code</field> 
+                <field name="year_start" >Start </field>  
+                <field name="year_end" >End </field>                  
+            </tree>
+      </field>
+    </record>
+      <!-- Action -->
+    <record id="action_grade" model="ir.actions.act_window">
+      <field name="name">grade</field>
+      <field name="res_model">school.grade</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="context">{}</field>
+      
+    </record>
+     <menuitem
+      id="menu_grade"
+      name="grade"
+      sequence="100"
+      action="action_grade"
+      />
+
+</odoo>

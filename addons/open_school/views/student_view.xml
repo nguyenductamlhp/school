@@ -18,7 +18,7 @@
                             <field name="student_code" >Student code </field>  
                         </group>
                         <group>
-                            <field name="grade" >Grade </field>  
+                            <field name="score" >Score </field>  
                         </group>
                         <group>
                             <field name="age" >Age </field>  
@@ -39,7 +39,7 @@
             <tree>
                 <field name="name" >Student name</field>
                 <field name="student_code" >Student code </field>  
-                <field name="grade" >Grade </field>  
+                <field name="score" >Score </field>  
                 <field name="age" >Age </field>  
                 <field name="class_id" >Class ID </field>
             </tree>
